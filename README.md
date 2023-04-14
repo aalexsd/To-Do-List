@@ -1,16 +1,13 @@
-# to_do_app
+# ToDo List
 
-A new Flutter project.
+Um aplicativo de To Do List.
 
-## Getting Started
+## Descrição
 
-This project is a starting point for a Flutter application.
+Neste app, implementei uma lista de atividades a serem feitas, podendo cada atividade ser marcada como feita e, quando marcada, a checkbox é preenchida e o texto riscado. 
 
-A few resources to get you started if this is your first Flutter project:
+Um textfield e um button para inserção de novas tarefas. E uma searchbar para buscar as tarefas já cadastradas.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+![ezgif com-video-to-gif](https://user-images.githubusercontent.com/104390047/232167579-4bda10a6-5888-49e0-9f2b-8fc9a8a4dc81.gif)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
