@@ -8,8 +8,13 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         leading: Icon(Icons.view_headline_sharp),
-        actions: [
-
+        actions: const [
+           Padding(
+            padding: EdgeInsets.only(right: 10.0),
+            child: CircleAvatar(
+              backgroundImage: AssetImage('assets/images/avatar.jpeg'),
+            ),
+          )
         ],
       ),
     );
