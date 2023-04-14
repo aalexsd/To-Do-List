@@ -7,7 +7,8 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: Icon(Icons.view_headline_sharp),
+        backgroundColor: const Color(0xFFEEEFF5),
+        leading: const Icon(Icons.menu),
         actions: const [
            Padding(
             padding: EdgeInsets.only(right: 10.0),
@@ -16,6 +17,9 @@ class HomeScreen extends StatelessWidget {
             ),
           )
         ],
+        iconTheme: const IconThemeData(
+          color: Colors.black,
+        ),
       ),
     );
   }
