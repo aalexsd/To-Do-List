@@ -3,7 +3,7 @@ import 'package:to_do_app/model/todo.dart';
 import '../widgets/todo_item.dart';
 
 class HomeScreen extends StatefulWidget {
-  HomeScreen({Key? key}) : super(key: key);
+  const HomeScreen({Key? key}) : super(key: key);
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
@@ -84,8 +84,8 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                     child: TextField(
                       controller: _todoController,
-                      style: TextStyle(fontSize: 18),
-                      decoration: InputDecoration(
+                      style: const TextStyle(fontSize: 18),
+                      decoration: const InputDecoration(
                         hintText: 'Adicione uma nova tarefa',
                         border: InputBorder.none,
                       ),
@@ -165,15 +165,15 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       child: TextField(
         onChanged: (value) => _runFilter(value),
-        decoration: InputDecoration(
+        decoration: const InputDecoration(
             contentPadding: EdgeInsets.only(top: 10),
             prefixIcon: Icon(Icons.search,
               color: Colors.black,
               size: 25,),
             border: InputBorder.none,
-            hintText: 'Search'
+            hintText: 'Buscar'
         ),
-        style: TextStyle(
+        style: const TextStyle(
             fontSize: 20
         ),
       ),
