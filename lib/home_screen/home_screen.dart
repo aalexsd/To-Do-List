@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:to_do_app/widgets/search_box.dart';
 
+import '../widgets/todo_item.dart';
+
+
+
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
@@ -10,10 +14,27 @@ class HomeScreen extends StatelessWidget {
       backgroundColor: const Color(0xFFEEEFF5),
       appBar: _buildAppBar(),
       body: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 15),
+        padding: const EdgeInsets.symmetric(horizontal: 20,
+        vertical: 15),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             searchBox(),
+            const Padding(
+              padding:  EdgeInsets.only(top: 40.0,
+              bottom: 20),
+              child: Text('All ToDos',
+              style: TextStyle(
+                fontSize: 35,
+                fontWeight: FontWeight.bold,
+              ),),
+            ),
+            Expanded(child: ListView(
+              children: const [
+                ToDoItem(),
+                ToDoItem(),
+              ],
+            ))
           ],
         ),
       ),
@@ -39,5 +60,6 @@ AppBar _buildAppBar() {
     ),
   );
 }
+
 
 
